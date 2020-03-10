@@ -16,8 +16,15 @@ get_header();
         $cat_link = get_category_link($category_id);
         echo '<h2><a href='.$cat_link.'>Cours</a></h2>';
         ?>
-        <h1>Question 4</h1>
+        <h1>Question 5</h1>
         <h1>Les cours du programme de Techniques d'intégration multimédia du collège de Maisonneuve</h1>
+        <div class="classes" style="display:grid;grid-template-columns: repeat(6, 3fr);grid-template-rows: repeat(1, 3fr);">
+            <div class="str">Environnement</div>
+            <div class="str">Animation</div>
+            <div class="str">Design</div>
+            <div class="str">Programmation</div>
+            <div class="str">Intégration</div>
+        </div>
 		<main id="main" class="site-main" style="display:grid;grid-template-columns: repeat(6, 3fr);grid-template-rows: repeat(6, 1fr);">
 
          <header class="page-header">
