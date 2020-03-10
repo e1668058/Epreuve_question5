@@ -15,6 +15,10 @@
   display: none;
 }
 
+.site-footer {
+  display: block;
+}
+
 .site-main a:hover {
   color: aquamarine;
 }
