@@ -23,12 +23,12 @@ get_header();
 			while ( have_posts() ) {
                the_post();
                
-               echo '<h3>' . get_the_title() . '</h3>';
+               echo '<h3>' . get_the_title() . '</h3>' ;
                
              }
 
 		    ?>
-
+                <!-- dawda -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
