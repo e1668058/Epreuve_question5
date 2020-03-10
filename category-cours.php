@@ -16,8 +16,9 @@ get_header();
         $cat_link = get_category_link($category_id);
         echo '<h2><a href='.$cat_link.'>Cours</a></h2>';
         ?>
-        <h1>Question 3</h1>
-		<main id="main" class="site-main">
+        <h1>Question 4</h1>
+        <h1>Les cours du programme de Techniques d'intégration multimédia du collège de Maisonneuve</h1>
+		<main id="main" class="site-main" style="display:grid;grid-template-columns: repeat(6, 3fr);grid-template-rows: repeat(6, 1fr);">
 
          <header class="page-header">
             
@@ -34,10 +35,11 @@ get_header();
                $n++;
                $link = get_permalink();
                $title = get_the_title();
+               $realTitle = substr($title, 0, 7);
                $sess = substr($title, 4, 1);
                $dom = substr($title, 5, 1);
-               echo '<div class=q3>';
-               echo '<h3>'.$n.'. <a href='.$link.'>'.$title .'</a> -  </h3> <h3 class=session> Session: '.$sess.' </h3> <h3 class=domaine> Domaine : '.$dom.'</h3>';
+               echo '<div class=q3 style=grid-area:'.$sess.'/'.$dom.'>';
+               echo '<h3><a href='.$link.'>'.$realTitle .'</a></h3>' ;
                echo '</div>';
              }
 

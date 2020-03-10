@@ -11,7 +11,7 @@ function extraire_cours( $query ) {
     if (!is_home() && $query->is_category('cours'))
     {
        $query->set( 'posts_per_page', 29 );
-       $query->set( 'orderby', 'meta_value_num');
+       
     }
  }
  add_action( 'pre_get_posts', 'extraire_cours' );
