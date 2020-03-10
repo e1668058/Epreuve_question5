@@ -1,3 +1,38 @@
-.site-header, .entry-footer, .main-navigation, .entry-title {
+.site-header, .entry-footer,  .entry-title {
     display: none;
+}
+
+.site-main {
+
+    a {
+        &:hover {
+            color: $couleur_bleu;
+        }
+        &:focus {
+            color: $couleur_jaune;
+        }
+        &:active {
+            color: $couleur_mauve;
+        }
+    }
+    
+    .q3 {
+        display: flex;
+        flex-direction: row;
+        // justify-content: center;
+        align-items: center;
+
+        h3 {
+            margin-left: 5px;
+
+            
+        }
+
+        .session {
+            color: orangered;
+        }
+        .domaine {
+            color: blue;
+        }
+    }
 }

@@ -11,7 +11,40 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  Underscores-enfant
 */
-.site-header, .entry-footer, .main-navigation, .entry-title {
+.site-header, .entry-footer, .entry-title {
   display: none;
+}
+
+.site-main a:hover {
+  color: aquamarine;
+}
+
+.site-main a:focus {
+  color: yellow;
+}
+
+.site-main .q3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-main .q3 h3 {
+  margin-left: 5px;
+}
+
+.site-main .q3 .session {
+  color: orangered;
+}
+
+.site-main .q3 .domaine {
+  color: blue;
 }
 /*# sourceMappingURL=style.css.map */
